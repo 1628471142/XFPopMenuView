@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'XFPopMenuView_Example' do
+  pod 'XFPopMenuView', :path => '../'
+
+  target 'XFPopMenuView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
