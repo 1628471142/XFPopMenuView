@@ -7,23 +7,44 @@
 //
 
 #import "XFViewController.h"
-
+#import "XFPopMenuView.h"
+#import "UILabel+XFPopMenuView.h"
 @interface XFViewController ()
 
 @end
 
 @implementation XFViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UILabel * lab = [[UILabel alloc] initWithFrame:CGRectMake(100, 50, 200, 60)];
+    lab.textAlignment = NSTextAlignmentCenter;
+    lab.text = @"我是一个label";
+    [lab setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:lab];
+    [lab addLongpressShowWithTitles:@[@"我是机灵鬼",@"我是老二",@"我是老三"] click:^(NSInteger index, UIButton *btn) {
+        NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
+    }];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)btnClick:(UIButton *)btn{
+    [XFPopMenuView showWithTitles:@[@"复制",@"翻译",@"粘贴"] forView:btn click:^(NSInteger index, UIButton *btn) {
+        NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
+    }];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 50, 50)];
+    [btn setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [XFPopMenuView showWithTitles:@[@"复制",@"翻译",@"粘贴"] forView:btn click:^(NSInteger index, UIButton *btn) {
+        NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
+    }];
+    [XFPopMenuView shareInstance].titles = @[@"复制",@"多选",@"粘贴"];
 }
 
 @end
+

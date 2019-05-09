@@ -1,0 +1,6 @@
+framework module Pods_XFPopMenuView_Tests {
+  umbrella header "Pods-XFPopMenuView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module XFPopMenuView {
+  umbrella header "XFPopMenuView-umbrella.h"
+
+  export *
+  module * { export * }
+}

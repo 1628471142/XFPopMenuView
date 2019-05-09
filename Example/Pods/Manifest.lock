@@ -1,0 +1,16 @@
+PODS:
+  - XFPopMenuView (0.1.0)
+
+DEPENDENCIES:
+  - XFPopMenuView (from `../`)
+
+EXTERNAL SOURCES:
+  XFPopMenuView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XFPopMenuView: 2e75996f448b3688adec9788c9a7d10e709a1fbc
+
+PODFILE CHECKSUM: 696d750960883fd00588df0e201f4440e16a5745
+
+COCOAPODS: 1.6.1

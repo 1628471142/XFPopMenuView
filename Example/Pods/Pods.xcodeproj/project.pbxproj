@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044D24E1AF161C04580EB75F29FC0511 /* Pods-XFPopMenuView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3ABF53135ED89C55F18923053B36A2D0 /* Pods-XFPopMenuView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1E144DD91CB436040FB4AC4F2998BA /* XFPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDBA65148F50C3C0FA66A8C38CD7D1DD /* XFPopMenuView.m */; };
+		426A0BBAF8D30C17BFC6EE950651CE3E /* UILabel+XFPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 352B7CD0039C78B2BB5E210227756A59 /* UILabel+XFPopMenuView.m */; };
+		50F3C3A311C7F90A92AA113FD9F0ECE5 /* UILabel+XFPopMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = DCFD82E1ABA5A82B3315ABB5284794BD /* UILabel+XFPopMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		564482B878F425573990ED7EBCE66756 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		6EA35BEC5A3608E57759F0679EDF2262 /* Pods-XFPopMenuView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 571727647B2B9C0CFEFE76F85FDE50B4 /* Pods-XFPopMenuView_Example-dummy.m */; };
+		763E2E0595F9B1D282ABE1403D60BCD7 /* Pods-XFPopMenuView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 319CAE8256CD0EC74E52E03CB491F56F /* Pods-XFPopMenuView_Tests-dummy.m */; };
+		A7475B769F7569C807672CCB67B07D73 /* XFPopMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A4213E0277E7B0A719FEEE3BA53773 /* XFPopMenuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBCFA9CC212EFC738CB5AE316420FC1D /* XFPopMenuView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E50990C50B9CF43B26BAFAC7346D87 /* XFPopMenuView-dummy.m */; };
+		D4406E13B6F6EAADEADAFF192C2416BB /* XFPopMenuView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EAD7E56048AF68DDCF5C9F7C0189550 /* XFPopMenuView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D70D565AA5C54983683D34E574B25150 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		FC545908CE4A16D092B177CEDD8E0F32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		FD771D44A52F1AFB9EED8F5AF509C3C1 /* Pods-XFPopMenuView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A72BE71B92B670E0C2AC8C95333A4C49 /* Pods-XFPopMenuView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79AD0F9ED17AF2BB4361CFED02F44330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 615C185AB5B24DB8040BB7229213D4F2;
+			remoteInfo = "Pods-XFPopMenuView_Example";
+		};
+		DA822FD97280F0230B271BD7487C99AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3BAAF76D20202EBBD055E3F35E75F45;
+			remoteInfo = XFPopMenuView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D6F370DEF40F81E7FFC334CB5907BFC /* Pods-XFPopMenuView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XFPopMenuView_Tests.modulemap"; sourceTree = "<group>"; };
+		126CB1E4B857FCA2C47423D9CE96C5C3 /* Pods-XFPopMenuView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XFPopMenuView_Example.modulemap"; sourceTree = "<group>"; };
+		251538159CB86308A58F485700E96EC9 /* XFPopMenuView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XFPopMenuView.xcconfig; sourceTree = "<group>"; };
+		26255125FA25AB6A7DDE2F715EEABCA7 /* Pods-XFPopMenuView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFPopMenuView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		319CAE8256CD0EC74E52E03CB491F56F /* Pods-XFPopMenuView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XFPopMenuView_Tests-dummy.m"; sourceTree = "<group>"; };
+		352B7CD0039C78B2BB5E210227756A59 /* UILabel+XFPopMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+XFPopMenuView.m"; path = "XFPopMenuView/Classes/XFPopMenuView/UILabel+XFPopMenuView.m"; sourceTree = "<group>"; };
+		39E50990C50B9CF43B26BAFAC7346D87 /* XFPopMenuView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XFPopMenuView-dummy.m"; sourceTree = "<group>"; };
+		3ABF53135ED89C55F18923053B36A2D0 /* Pods-XFPopMenuView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XFPopMenuView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3DBAAEA07F2F6362C3247978DFBF5F14 /* XFPopMenuView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFPopMenuView-prefix.pch"; sourceTree = "<group>"; };
+		571727647B2B9C0CFEFE76F85FDE50B4 /* Pods-XFPopMenuView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XFPopMenuView_Example-dummy.m"; sourceTree = "<group>"; };
+		629A73DC2AD5CDE658EB719C751BF38B /* Pods-XFPopMenuView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFPopMenuView_Example-Info.plist"; sourceTree = "<group>"; };
+		664033566F40580CDE1E6900CA8CDF64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6EAD7E56048AF68DDCF5C9F7C0189550 /* XFPopMenuView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XFPopMenuView-umbrella.h"; sourceTree = "<group>"; };
+		75F2CA8BB859471472FD7C9573DCB740 /* XFPopMenuView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = XFPopMenuView.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		7918AECDB620741ACEEC40C59F31FA6A /* XFPopMenuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XFPopMenuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0FA307C6428AF716720E4D223D024B /* Pods-XFPopMenuView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFPopMenuView_Tests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E07B0341F5646E5B29AECDDE8A096FA /* Pods_XFPopMenuView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XFPopMenuView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A4213E0277E7B0A719FEEE3BA53773 /* XFPopMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XFPopMenuView.h; path = XFPopMenuView/Classes/XFPopMenuView/XFPopMenuView.h; sourceTree = "<group>"; };
+		A72BE71B92B670E0C2AC8C95333A4C49 /* Pods-XFPopMenuView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XFPopMenuView_Example-umbrella.h"; sourceTree = "<group>"; };
+		A90076E14A2057F6AD28CD8298A754DF /* Pods_XFPopMenuView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XFPopMenuView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD0FC88327F4028613CC551B93F8257 /* Pods-XFPopMenuView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XFPopMenuView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		ADA6C60127F3CBC21475D3D64306CA1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BDBA65148F50C3C0FA66A8C38CD7D1DD /* XFPopMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XFPopMenuView.m; path = XFPopMenuView/Classes/XFPopMenuView/XFPopMenuView.m; sourceTree = "<group>"; };
+		C6CB4F424B2183D221082F8BE3FA4D9C /* Pods-XFPopMenuView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFPopMenuView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CAB94D57A8C99F9E0120A595A49BBD52 /* Pods-XFPopMenuView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFPopMenuView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC80A88FDDBA9536F52AD0EDB0D96DB4 /* Pods-XFPopMenuView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFPopMenuView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D3351456F2C3386CD20F98A39D9CA0EB /* XFPopMenuView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XFPopMenuView.modulemap; sourceTree = "<group>"; };
+		DBBD8110CD5CB97CB06505329D3CF1FE /* Pods-XFPopMenuView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XFPopMenuView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DCFD82E1ABA5A82B3315ABB5284794BD /* UILabel+XFPopMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+XFPopMenuView.h"; path = "XFPopMenuView/Classes/XFPopMenuView/UILabel+XFPopMenuView.h"; sourceTree = "<group>"; };
+		DF8055F45859EBC86D661996A54BDDCE /* Pods-XFPopMenuView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XFPopMenuView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E22F358BE7EAC5767ABBB7CE476C54F1 /* Pods-XFPopMenuView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XFPopMenuView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FB158B6FD4934237E2932A1CE278D94E /* Pods-XFPopMenuView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XFPopMenuView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FDA95BD974BBF10A80AE45E1E7A10871 /* XFPopMenuView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XFPopMenuView-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F31DF9A236A94A177B51B044FE3E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564482B878F425573990ED7EBCE66756 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4D7C7C122E1044B780B5926C2B1CF89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D70D565AA5C54983683D34E574B25150 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B4875ACAD124F1F9EA46FB7D9D2B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC545908CE4A16D092B177CEDD8E0F32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02535E7F65BC43CF64E49981E64A5D79 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E52153F1B04438A2CF34D95DFBB6251A /* XFPopMenuView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3AFE2450D23CE73ED2793B3107CFA627 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D47B70465A332BE31EE53311574D39F7 /* Pods-XFPopMenuView_Example */,
+				7AA9AE8D374060C4DDF0D83B05CBE8E0 /* Pods-XFPopMenuView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B1515698190E1EFA7422CB18C6B6A07 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3351456F2C3386CD20F98A39D9CA0EB /* XFPopMenuView.modulemap */,
+				251538159CB86308A58F485700E96EC9 /* XFPopMenuView.xcconfig */,
+				39E50990C50B9CF43B26BAFAC7346D87 /* XFPopMenuView-dummy.m */,
+				FDA95BD974BBF10A80AE45E1E7A10871 /* XFPopMenuView-Info.plist */,
+				3DBAAEA07F2F6362C3247978DFBF5F14 /* XFPopMenuView-prefix.pch */,
+				6EAD7E56048AF68DDCF5C9F7C0189550 /* XFPopMenuView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XFPopMenuView";
+			sourceTree = "<group>";
+		};
+		7AA9AE8D374060C4DDF0D83B05CBE8E0 /* Pods-XFPopMenuView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0D6F370DEF40F81E7FFC334CB5907BFC /* Pods-XFPopMenuView_Tests.modulemap */,
+				DBBD8110CD5CB97CB06505329D3CF1FE /* Pods-XFPopMenuView_Tests-acknowledgements.markdown */,
+				CAB94D57A8C99F9E0120A595A49BBD52 /* Pods-XFPopMenuView_Tests-acknowledgements.plist */,
+				319CAE8256CD0EC74E52E03CB491F56F /* Pods-XFPopMenuView_Tests-dummy.m */,
+				7F0FA307C6428AF716720E4D223D024B /* Pods-XFPopMenuView_Tests-Info.plist */,
+				3ABF53135ED89C55F18923053B36A2D0 /* Pods-XFPopMenuView_Tests-umbrella.h */,
+				DF8055F45859EBC86D661996A54BDDCE /* Pods-XFPopMenuView_Tests.debug.xcconfig */,
+				CC80A88FDDBA9536F52AD0EDB0D96DB4 /* Pods-XFPopMenuView_Tests.release.xcconfig */,
+			);
+			name = "Pods-XFPopMenuView_Tests";
+			path = "Target Support Files/Pods-XFPopMenuView_Tests";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A06BC8D90B025E14607A91ECE9C231B7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				664033566F40580CDE1E6900CA8CDF64 /* LICENSE */,
+				ADA6C60127F3CBC21475D3D64306CA1B /* README.md */,
+				75F2CA8BB859471472FD7C9573DCB740 /* XFPopMenuView.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				02535E7F65BC43CF64E49981E64A5D79 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F6151D1CC1A438513D094E94C2329EB1 /* Products */,
+				3AFE2450D23CE73ED2793B3107CFA627 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D47B70465A332BE31EE53311574D39F7 /* Pods-XFPopMenuView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				126CB1E4B857FCA2C47423D9CE96C5C3 /* Pods-XFPopMenuView_Example.modulemap */,
+				E22F358BE7EAC5767ABBB7CE476C54F1 /* Pods-XFPopMenuView_Example-acknowledgements.markdown */,
+				FB158B6FD4934237E2932A1CE278D94E /* Pods-XFPopMenuView_Example-acknowledgements.plist */,
+				571727647B2B9C0CFEFE76F85FDE50B4 /* Pods-XFPopMenuView_Example-dummy.m */,
+				ABD0FC88327F4028613CC551B93F8257 /* Pods-XFPopMenuView_Example-frameworks.sh */,
+				629A73DC2AD5CDE658EB719C751BF38B /* Pods-XFPopMenuView_Example-Info.plist */,
+				A72BE71B92B670E0C2AC8C95333A4C49 /* Pods-XFPopMenuView_Example-umbrella.h */,
+				C6CB4F424B2183D221082F8BE3FA4D9C /* Pods-XFPopMenuView_Example.debug.xcconfig */,
+				26255125FA25AB6A7DDE2F715EEABCA7 /* Pods-XFPopMenuView_Example.release.xcconfig */,
+			);
+			name = "Pods-XFPopMenuView_Example";
+			path = "Target Support Files/Pods-XFPopMenuView_Example";
+			sourceTree = "<group>";
+		};
+		E52153F1B04438A2CF34D95DFBB6251A /* XFPopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				DCFD82E1ABA5A82B3315ABB5284794BD /* UILabel+XFPopMenuView.h */,
+				352B7CD0039C78B2BB5E210227756A59 /* UILabel+XFPopMenuView.m */,
+				A3A4213E0277E7B0A719FEEE3BA53773 /* XFPopMenuView.h */,
+				BDBA65148F50C3C0FA66A8C38CD7D1DD /* XFPopMenuView.m */,
+				A06BC8D90B025E14607A91ECE9C231B7 /* Pod */,
+				3B1515698190E1EFA7422CB18C6B6A07 /* Support Files */,
+			);
+			name = XFPopMenuView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F6151D1CC1A438513D094E94C2329EB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90076E14A2057F6AD28CD8298A754DF /* Pods_XFPopMenuView_Example.framework */,
+				9E07B0341F5646E5B29AECDDE8A096FA /* Pods_XFPopMenuView_Tests.framework */,
+				7918AECDB620741ACEEC40C59F31FA6A /* XFPopMenuView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2E6315046CE166DD2BAEF895BA422613 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD771D44A52F1AFB9EED8F5AF509C3C1 /* Pods-XFPopMenuView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73C6096C3E307907931A17CB0AC941F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044D24E1AF161C04580EB75F29FC0511 /* Pods-XFPopMenuView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA38AB8838F719EB8B86254056F555B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50F3C3A311C7F90A92AA113FD9F0ECE5 /* UILabel+XFPopMenuView.h in Headers */,
+				D4406E13B6F6EAADEADAFF192C2416BB /* XFPopMenuView-umbrella.h in Headers */,
+				A7475B769F7569C807672CCB67B07D73 /* XFPopMenuView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		615C185AB5B24DB8040BB7229213D4F2 /* Pods-XFPopMenuView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67179B63D171BCEBFDC783C9A5792F3D /* Build configuration list for PBXNativeTarget "Pods-XFPopMenuView_Example" */;
+			buildPhases = (
+				2E6315046CE166DD2BAEF895BA422613 /* Headers */,
+				42B6A8C8BF5C0095F1338086BAA62194 /* Sources */,
+				F4D7C7C122E1044B780B5926C2B1CF89 /* Frameworks */,
+				74353E4E73D39E6768953C5E906214EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C305EDA526DA11840E50709B0A7BBEC /* PBXTargetDependency */,
+			);
+			name = "Pods-XFPopMenuView_Example";
+			productName = "Pods-XFPopMenuView_Example";
+			productReference = A90076E14A2057F6AD28CD8298A754DF /* Pods_XFPopMenuView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A3BAAF76D20202EBBD055E3F35E75F45 /* XFPopMenuView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A01473E13A6657E114F7F9C9262C46A /* Build configuration list for PBXNativeTarget "XFPopMenuView" */;
+			buildPhases = (
+				FA38AB8838F719EB8B86254056F555B1 /* Headers */,
+				8ED57AD6C969FA111E3B1459AE0D6AA3 /* Sources */,
+				11F31DF9A236A94A177B51B044FE3E57 /* Frameworks */,
+				F528F116628134B4800067CB017462E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XFPopMenuView;
+			productName = XFPopMenuView;
+			productReference = 7918AECDB620741ACEEC40C59F31FA6A /* XFPopMenuView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2D049D6FB6A2A04C2B4085A083BE3E8 /* Pods-XFPopMenuView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE70E5DC47635096E127AF634D637CF1 /* Build configuration list for PBXNativeTarget "Pods-XFPopMenuView_Tests" */;
+			buildPhases = (
+				B73C6096C3E307907931A17CB0AC941F /* Headers */,
+				C9F7CF6EEDE548BF679C1BCFE38E19F3 /* Sources */,
+				F7B4875ACAD124F1F9EA46FB7D9D2B00 /* Frameworks */,
+				DAEAA9C46B9CB6C3014AD6A520B8DEC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11E850AA3215C03454144D8C38B39725 /* PBXTargetDependency */,
+			);
+			name = "Pods-XFPopMenuView_Tests";
+			productName = "Pods-XFPopMenuView_Tests";
+			productReference = 9E07B0341F5646E5B29AECDDE8A096FA /* Pods_XFPopMenuView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F6151D1CC1A438513D094E94C2329EB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				615C185AB5B24DB8040BB7229213D4F2 /* Pods-XFPopMenuView_Example */,
+				B2D049D6FB6A2A04C2B4085A083BE3E8 /* Pods-XFPopMenuView_Tests */,
+				A3BAAF76D20202EBBD055E3F35E75F45 /* XFPopMenuView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74353E4E73D39E6768953C5E906214EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAEAA9C46B9CB6C3014AD6A520B8DEC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F528F116628134B4800067CB017462E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42B6A8C8BF5C0095F1338086BAA62194 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA35BEC5A3608E57759F0679EDF2262 /* Pods-XFPopMenuView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED57AD6C969FA111E3B1459AE0D6AA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426A0BBAF8D30C17BFC6EE950651CE3E /* UILabel+XFPopMenuView.m in Sources */,
+				BBCFA9CC212EFC738CB5AE316420FC1D /* XFPopMenuView-dummy.m in Sources */,
+				1F1E144DD91CB436040FB4AC4F2998BA /* XFPopMenuView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9F7CF6EEDE548BF679C1BCFE38E19F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				763E2E0595F9B1D282ABE1403D60BCD7 /* Pods-XFPopMenuView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11E850AA3215C03454144D8C38B39725 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XFPopMenuView_Example";
+			target = 615C185AB5B24DB8040BB7229213D4F2 /* Pods-XFPopMenuView_Example */;
+			targetProxy = 79AD0F9ED17AF2BB4361CFED02F44330 /* PBXContainerItemProxy */;
+		};
+		2C305EDA526DA11840E50709B0A7BBEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XFPopMenuView;
+			target = A3BAAF76D20202EBBD055E3F35E75F45 /* XFPopMenuView */;
+			targetProxy = DA822FD97280F0230B271BD7487C99AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0105D036D047E655DE391548B0F3FCB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC80A88FDDBA9536F52AD0EDB0D96DB4 /* Pods-XFPopMenuView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XFPopMenuView_Tests/Pods-XFPopMenuView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XFPopMenuView_Tests/Pods-XFPopMenuView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05DF210AC65EBB0E593AAF976B2C2177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1580192731D64FA3B6EA083BBBFB056D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26255125FA25AB6A7DDE2F715EEABCA7 /* Pods-XFPopMenuView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XFPopMenuView_Example/Pods-XFPopMenuView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XFPopMenuView_Example/Pods-XFPopMenuView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		23D70F36359327F180713F38E58FB2E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6CB4F424B2183D221082F8BE3FA4D9C /* Pods-XFPopMenuView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XFPopMenuView_Example/Pods-XFPopMenuView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XFPopMenuView_Example/Pods-XFPopMenuView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		421ECB1396280A8D83853C3DDBED1700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		79F4765D95039E10AD0C11C7DB552F36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251538159CB86308A58F485700E96EC9 /* XFPopMenuView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XFPopMenuView/XFPopMenuView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XFPopMenuView/XFPopMenuView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XFPopMenuView/XFPopMenuView.modulemap";
+				PRODUCT_MODULE_NAME = XFPopMenuView;
+				PRODUCT_NAME = XFPopMenuView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8147C12CB3C46E0B61D82A59381AE0A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF8055F45859EBC86D661996A54BDDCE /* Pods-XFPopMenuView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XFPopMenuView_Tests/Pods-XFPopMenuView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XFPopMenuView_Tests/Pods-XFPopMenuView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90E734E713D6127CEA524BED9D64E255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 251538159CB86308A58F485700E96EC9 /* XFPopMenuView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XFPopMenuView/XFPopMenuView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XFPopMenuView/XFPopMenuView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XFPopMenuView/XFPopMenuView.modulemap";
+				PRODUCT_MODULE_NAME = XFPopMenuView;
+				PRODUCT_NAME = XFPopMenuView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				421ECB1396280A8D83853C3DDBED1700 /* Debug */,
+				05DF210AC65EBB0E593AAF976B2C2177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67179B63D171BCEBFDC783C9A5792F3D /* Build configuration list for PBXNativeTarget "Pods-XFPopMenuView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23D70F36359327F180713F38E58FB2E1 /* Debug */,
+				1580192731D64FA3B6EA083BBBFB056D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A01473E13A6657E114F7F9C9262C46A /* Build configuration list for PBXNativeTarget "XFPopMenuView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F4765D95039E10AD0C11C7DB552F36 /* Debug */,
+				90E734E713D6127CEA524BED9D64E255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE70E5DC47635096E127AF634D637CF1 /* Build configuration list for PBXNativeTarget "Pods-XFPopMenuView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8147C12CB3C46E0B61D82A59381AE0A2 /* Debug */,
+				0105D036D047E655DE391548B0F3FCB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
