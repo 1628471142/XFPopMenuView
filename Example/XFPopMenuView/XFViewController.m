@@ -45,10 +45,22 @@
     [btn setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    // 添加拖动手势
+    UIPanGestureRecognizer * pan             = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
+    pan.maximumNumberOfTouches               = 1;
+    btn.userInteractionEnabled = YES;
+    [btn addGestureRecognizer:pan];
     [XFPopMenuView showWithTitles:@[@"复制",@"翻译",@"粘贴"] forView:btn click:^(NSInteger index, UIButton *btn) {
         NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
     }];
 //    [XFPopMenuView shareInstance].titles = @[@"复制",@"多选",@"粘贴"];
+}
+
+- (void)panEvent:(UIPanGestureRecognizer *)pan{
+    CGPoint center = pan.view.center;
+     CGPoint translation = [pan translationInView:self.view];
+     pan.view.center = CGPointMake(center.x + translation.x, center.y + translation.y);
+    [pan setTranslation:CGPointZero inView:self.view];
 }
 
 @end
