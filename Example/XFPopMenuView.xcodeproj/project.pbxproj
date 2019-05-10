@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0902D3DAA44B1B772FE7C362 /* Pods_XFPopMenuView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XFPopMenuView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C10B94F468CA2AD5A27B510 /* XFPopMenuView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XFPopMenuView.podspec; path = ../XFPopMenuView.podspec; sourceTree = "<group>"; };
+		0C10B94F468CA2AD5A27B510 /* XFPopMenuView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XFPopMenuView.podspec; path = ../XFPopMenuView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		208A2A4076B60933360D1BB6 /* Pods-XFPopMenuView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFPopMenuView_Example.debug.xcconfig"; path = "Target Support Files/Pods-XFPopMenuView_Example/Pods-XFPopMenuView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		42BA60DA1B18CCF04DA10B77 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		455B19E9D6EC1D7BA3EFC634 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };

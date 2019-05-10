@@ -206,6 +206,9 @@ static XFPopMenuView * _instance = nil;
     CGFloat borderRadius = 8;
     // 三角水平位置中点
     CGFloat angleX = viewW/2 - _offsetX;
+    if (angleX > viewW - 2*AngleHeight - borderRadius) {
+        angleX = viewW - 2*AngleHeight - borderRadius;
+    }
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineJoin(context, kCGLineJoinRound); //
