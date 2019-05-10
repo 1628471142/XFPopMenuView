@@ -19,7 +19,9 @@ typedef NS_ENUM(NSUInteger, XFMenuPosition) {
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XFPopMenuView : UIView
-
+{
+    CGFloat _offsetX;// 向右偏移距离，默认为0（触发条件，屏幕左右侧某一侧超出屏幕）
+}
 /**
  遮罩层（触摸事件，移除菜单视图的图层）
  */

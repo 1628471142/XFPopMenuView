@@ -36,7 +36,7 @@
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 50, 50)];
+    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(350, 400, 50, 50)];
     [btn setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];

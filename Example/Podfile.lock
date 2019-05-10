@@ -1,5 +1,5 @@
 PODS:
-  - XFPopMenuView (0.1.0)
+  - XFPopMenuView (0.1.1)
 
 DEPENDENCIES:
   - XFPopMenuView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XFPopMenuView: 2e75996f448b3688adec9788c9a7d10e709a1fbc
+  XFPopMenuView: 0a4a07d57e54dbb5da37f8bbe53bf13bcf2a1123
 
 PODFILE CHECKSUM: 696d750960883fd00588df0e201f4440e16a5745
 

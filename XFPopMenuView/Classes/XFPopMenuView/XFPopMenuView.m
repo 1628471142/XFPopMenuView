@@ -21,6 +21,8 @@ static XFPopMenuView * _instance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{
         _instance = [[self alloc] init];
+        _instance.buttons = [[NSMutableArray alloc] init];
+        [_instance setBackgroundColor:[UIColor whiteColor]];
         _instance.coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
         tap.numberOfTapsRequired = 1;
@@ -96,11 +98,10 @@ static XFPopMenuView * _instance = nil;
 + (void)showWithTitles:(NSArray *)titles forView:(nonnull UIView *)view click:(nonnull XFMenuPopViewClickBlock)block{
     
     XFPopMenuView * popMenuView = [XFPopMenuView shareInstance];
+    popMenuView->_offsetX = 0;
     popMenuView.titles = titles;
     popMenuView.targetView = view;
     popMenuView.clickBlock = block;
-    popMenuView.buttons = [[NSMutableArray alloc] init];
-    [popMenuView setBackgroundColor:[UIColor whiteColor]];
     [popMenuView addSubButtons:titles];
     UIWindow * window = [[[UIApplication sharedApplication] delegate] window]?:[UIApplication sharedApplication].keyWindow;
     [window addSubview:popMenuView.coverView];
@@ -115,7 +116,7 @@ static XFPopMenuView * _instance = nil;
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.buttons removeAllObjects];
     
-    // 计算相对位置，判断是否需要调整按钮方向
+    // 计算相对位置，判断是否需要调整箭头方向
     UIWindow * window = [[[UIApplication sharedApplication] delegate] window]?:[UIApplication sharedApplication].keyWindow;
     CGRect startRact = [_targetView convertRect:_targetView.bounds toView:window];
     if (startRact.origin.y + startRact.size.height/2.0 < [UIScreen mainScreen].bounds.size.height/2.0) {
@@ -150,7 +151,19 @@ static XFPopMenuView * _instance = nil;
     CGFloat selfHeight = titleHeight + self.verticalPadding*2 + AngleHeight;
     // menuView相对目标视图的纵向偏移
     CGFloat y = self.position == XFMenuPositionTop ? startRact.origin.y - selfHeight : startRact.origin.y + startRact.size.height;
-    CGRect endFrame = CGRectMake(round(startRact.origin.x + startRact.size.width/2 - width/2), round(y), round(width), round(selfHeight));
+    CGFloat x = round(startRact.origin.x + startRact.size.width/2 - width/2);
+    y = round(y);
+    CGFloat w = round(width);
+    CGFloat h = round(selfHeight);
+    if (x < 15) {
+        _offsetX = 15 - x;
+        x = 15;
+    }
+    if (x + w > [UIScreen mainScreen].bounds.size.width - 15) {
+        _offsetX = [UIScreen mainScreen].bounds.size.width - 15 - x - w;
+        x = x + _offsetX;
+    }
+    CGRect endFrame = CGRectMake(x,y,w,h);
     [self setFrame:endFrame];
 }
 
@@ -178,6 +191,8 @@ static XFPopMenuView * _instance = nil;
     
     CGFloat strokeWidth = 0.1;
     CGFloat borderRadius = 8;
+    // 三角水平位置中点
+    CGFloat angleX = viewW/2 - _offsetX;
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineJoin(context, kCGLineJoinRound); //
@@ -191,9 +206,9 @@ static XFPopMenuView * _instance = nil;
         CGContextMoveToPoint(context, 0, borderRadius);
         CGContextAddArcToPoint(context, 0, viewH - AngleHeight, borderRadius, viewH - AngleHeight, borderRadius);
         // 画三角部分
-        CGContextAddLineToPoint(context, viewW/2 - AngleHeight, viewH - AngleHeight);
-        CGContextAddLineToPoint(context, viewW/2, viewH);
-        CGContextAddLineToPoint(context, viewW/2 + AngleHeight, viewH - AngleHeight);
+        CGContextAddLineToPoint(context, angleX - AngleHeight, viewH - AngleHeight);
+        CGContextAddLineToPoint(context, angleX, viewH);
+        CGContextAddLineToPoint(context, angleX + AngleHeight, viewH - AngleHeight);
         
         CGContextAddArcToPoint(context, viewW, viewH - AngleHeight, viewW,viewH - AngleHeight - borderRadius, borderRadius);
         CGContextAddArcToPoint(context, viewW, 0, viewW-borderRadius, 0, borderRadius);
@@ -205,9 +220,9 @@ static XFPopMenuView * _instance = nil;
         CGContextAddArcToPoint(context, 0, viewH, borderRadius, viewH, borderRadius);
         CGContextAddArcToPoint(context, viewW, viewH, viewW,viewH - borderRadius, borderRadius);
         CGContextAddArcToPoint(context, viewW, AngleHeight, viewW-borderRadius, AngleHeight, borderRadius);
-        CGContextAddLineToPoint(context, viewW/2 + AngleHeight, AngleHeight);
-        CGContextAddLineToPoint(context, viewW/2, 0);
-        CGContextAddLineToPoint(context, viewW/2 - AngleHeight, AngleHeight);
+        CGContextAddLineToPoint(context, angleX + AngleHeight, AngleHeight);
+        CGContextAddLineToPoint(context, angleX, 0);
+        CGContextAddLineToPoint(context, angleX - AngleHeight, AngleHeight);
         CGContextAddArcToPoint(context, 0, AngleHeight, 0, borderRadius + AngleHeight, borderRadius);
     }
     
