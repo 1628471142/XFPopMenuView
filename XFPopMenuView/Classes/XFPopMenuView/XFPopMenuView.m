@@ -23,10 +23,11 @@ static XFPopMenuView * _instance = nil;
         _instance = [[self alloc] init];
         _instance.buttons = [[NSMutableArray alloc] init];
         [_instance setBackgroundColor:[UIColor whiteColor]];
-        _instance.coverView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-        UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hide)];
-        tap.numberOfTapsRequired = 1;
-        [_instance.coverView addGestureRecognizer:tap];
+        _instance.coverView = [[XFCoverView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+        __weak XFPopMenuView * weakInstance = _instance;
+        _instance.coverView.touchBlock = ^{
+            [weakInstance hide];
+        };
     });
     return _instance;
 }
@@ -98,9 +99,9 @@ static XFPopMenuView * _instance = nil;
 + (void)showWithTitles:(NSArray *)titles forView:(nonnull UIView *)view click:(nonnull XFMenuPopViewClickBlock)block{
     
     XFPopMenuView * popMenuView = [XFPopMenuView shareInstance];
-    popMenuView->_offsetX = 0;
-    popMenuView.titles = titles;
+    popMenuView.offsetX = 0;
     popMenuView.targetView = view;
+    popMenuView.titles = titles;
     popMenuView.clickBlock = block;
     [popMenuView addSubButtons:titles];
     UIWindow * window = [[[UIApplication sharedApplication] delegate] window]?:[UIApplication sharedApplication].keyWindow;
@@ -118,13 +119,24 @@ static XFPopMenuView * _instance = nil;
     
     // 计算相对位置，判断是否需要调整箭头方向
     UIWindow * window = [[[UIApplication sharedApplication] delegate] window]?:[UIApplication sharedApplication].keyWindow;
-    CGRect startRact = [_targetView convertRect:_targetView.bounds toView:window];
-    if (startRact.origin.y + startRact.size.height/2.0 < [UIScreen mainScreen].bounds.size.height/2.0) {
-        self.position = XFMenuPositionBottom;
+    CGRect startRect = [_targetView convertRect:_targetView.bounds toView:window];
+    if (startRect.origin.y + startRect.size.height/2.0 < [UIScreen mainScreen].bounds.size.height/2.0) {
+        if (_position != XFMenuPositionBottom) {
+            self.position = XFMenuPositionBottom;
+        }else{
+            [self configPopViewFrameWithTitles:titles startRect:startRect];
+        }
     }else{
-        self.position = XFMenuPositionTop;
+        if (_position != XFMenuPositionTop) {
+            self.position = XFMenuPositionTop;
+        }else{
+            [self configPopViewFrameWithTitles:titles startRect:startRect];
+        }
     }
-    
+
+}
+
+- (void)configPopViewFrameWithTitles:(NSArray *)titles startRect:(CGRect)startRect{
     CGFloat width = 0;
     NSString * firstTitle = [titles firstObject];
     CGFloat titleHeight = [firstTitle sizeWithAttributes:@{NSFontAttributeName:self.font}].height;
@@ -150,8 +162,8 @@ static XFPopMenuView * _instance = nil;
     }
     CGFloat selfHeight = titleHeight + self.verticalPadding*2 + AngleHeight;
     // menuView相对目标视图的纵向偏移
-    CGFloat y = self.position == XFMenuPositionTop ? startRact.origin.y - selfHeight : startRact.origin.y + startRact.size.height;
-    CGFloat x = round(startRact.origin.x + startRact.size.width/2 - width/2);
+    CGFloat y = self.position == XFMenuPositionTop ? startRect.origin.y - selfHeight : startRect.origin.y + startRect.size.height;
+    CGFloat x = round(startRect.origin.x + startRect.size.width/2 - width/2);
     y = round(y);
     CGFloat w = round(width);
     CGFloat h = round(selfHeight);
@@ -166,6 +178,7 @@ static XFPopMenuView * _instance = nil;
     CGRect endFrame = CGRectMake(x,y,w,h);
     [self setFrame:endFrame];
 }
+
 
 - (void)btnClickEvent:(UIButton *)btn{
     if (_clickBlock) {
@@ -241,6 +254,19 @@ static XFPopMenuView * _instance = nil;
     UIImage *image =UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return image;
+}
+
+@end
+
+
+@implementation XFCoverView
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    if (self.touchBlock) {
+        self.touchBlock();
+    }
+    
 }
 
 @end

@@ -26,6 +26,11 @@
     [lab addLongpressShowWithTitles:@[@"我是机灵鬼",@"我是老二",@"我是老三"] click:^(NSInteger index, UIButton *btn) {
         NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
     }];
+    
+//    UIButton * btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 50, 200, 60)];
+//    [btn setBackgroundColor:[UIColor redColor]];
+//    [self.view addSubview:btn];
+//    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)btnClick:(UIButton *)btn{
@@ -43,7 +48,7 @@
     [XFPopMenuView showWithTitles:@[@"复制",@"翻译",@"粘贴"] forView:btn click:^(NSInteger index, UIButton *btn) {
         NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
     }];
-    [XFPopMenuView shareInstance].titles = @[@"复制",@"多选",@"粘贴"];
+//    [XFPopMenuView shareInstance].titles = @[@"复制",@"多选",@"粘贴"];
 }
 
 @end

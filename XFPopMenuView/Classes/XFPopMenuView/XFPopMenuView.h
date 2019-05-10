@@ -8,8 +8,9 @@
 
 
 #import <UIKit/UIKit.h>
-
+@class XFCoverView;
 typedef void(^XFMenuPopViewClickBlock)(NSInteger index,UIButton * _Nullable btn);
+typedef void(^XFCoverTouchEventBlock)(void);
 
 typedef NS_ENUM(NSUInteger, XFMenuPosition) {
     XFMenuPositionTop,
@@ -19,13 +20,11 @@ typedef NS_ENUM(NSUInteger, XFMenuPosition) {
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XFPopMenuView : UIView
-{
-    CGFloat _offsetX;// 向右偏移距离，默认为0（触发条件，屏幕左右侧某一侧超出屏幕）
-}
+
 /**
  遮罩层（触摸事件，移除菜单视图的图层）
  */
-@property (nonatomic, strong) UIView * coverView;
+@property (nonatomic, strong) XFCoverView * coverView;
 
 /**
  触发视图，为该视图添加菜单栏
@@ -58,6 +57,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat verticalPadding;
 
 /**
+ 向右偏移距离，默认为0（触发条件，屏幕左右侧某一侧超出屏幕）
+ */
+@property (nonatomic, assign) CGFloat offsetX;
+
+/**
  菜单栏位置
  */
 @property (nonatomic, assign,readonly) XFMenuPosition position;
@@ -85,3 +89,11 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+
+@interface XFCoverView : UIView
+
+@property (nonatomic, copy) XFCoverTouchEventBlock touchBlock;
+
+@end
+
