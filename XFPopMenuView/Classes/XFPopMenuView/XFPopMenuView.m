@@ -261,12 +261,15 @@ static XFPopMenuView * _instance = nil;
 
 @implementation XFCoverView
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-    if (self.touchBlock) {
-        self.touchBlock();
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event{
+    UIView *view = [super hitTest:point withEvent:event];
+    if (view == self) {
+        if (self.touchBlock) {
+            self.touchBlock();
+        }
+        return nil;
     }
-    
+    return view;
 }
 
 @end

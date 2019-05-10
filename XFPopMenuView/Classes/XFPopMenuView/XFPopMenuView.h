@@ -93,7 +93,7 @@ NS_ASSUME_NONNULL_END
 
 @interface XFCoverView : UIView
 
-@property (nonatomic, copy) XFCoverTouchEventBlock touchBlock;
+@property (nonatomic, copy) XFCoverTouchEventBlock _Nullable touchBlock;
 
 @end
 
