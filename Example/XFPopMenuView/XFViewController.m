@@ -34,9 +34,23 @@
 }
 
 - (void)btnClick:(UIButton *)btn{
+    
+//    UIMenuController * menu = [UIMenuController sharedMenuController];
+//    UIMenuItem * item1 = [[UIMenuItem alloc] initWithTitle:@"复制" action:@selector(btnClick:)];
+//    UIMenuItem * item2 = [[UIMenuItem alloc] initWithTitle:@"复制好了" action:@selector(btnClick:)];
+//    UIMenuItem * item3 = [[UIMenuItem alloc] initWithTitle:@"复制全部" action:@selector(btnClick:)];
+//    menu.menuItems = @[item1,item2,item3];
+//    [menu setTargetRect:btn.bounds inView:btn];
+//    [menu setMenuVisible:YES animated:YES];
+    
     [XFPopMenuView showWithTitles:@[@"复制",@"翻译",@"粘贴"] forView:btn click:^(NSInteger index, UIButton *btn) {
         NSLog(@"我点击了%ld，我叫%@",index,btn.titleLabel.text);
     }];
+}
+
+- (BOOL)canBecomeFirstResponder
+{
+    return YES;
 }
 
 - (void)viewDidAppear:(BOOL)animated{

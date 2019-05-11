@@ -5,7 +5,7 @@
 //  Created by 李雪峰 on 2019/5/8.
 //  Copyright © 2019 李雪峰. All rights reserved.
 //
-#define AngleHeight 10
+#define AngleHeight 8
 #import "XFPopMenuView.h"
 
 @implementation XFPopMenuView
@@ -203,11 +203,14 @@ static XFPopMenuView * _instance = nil;
     CGFloat viewH = rect.size.height;
     
     CGFloat strokeWidth = 0.1;
-    CGFloat borderRadius = 8;
+    CGFloat borderRadius = 10;
     // 三角水平位置中点
     CGFloat angleX = viewW/2 - _offsetX;
-    if (angleX > viewW - 2*AngleHeight - borderRadius) {
-        angleX = viewW - 2*AngleHeight - borderRadius;
+    if (angleX > viewW - AngleHeight - borderRadius) {
+        angleX = viewW - AngleHeight - borderRadius;
+    }
+    if (angleX < AngleHeight + borderRadius) {
+        angleX = AngleHeight + borderRadius;
     }
     
     CGContextRef context = UIGraphicsGetCurrentContext();
