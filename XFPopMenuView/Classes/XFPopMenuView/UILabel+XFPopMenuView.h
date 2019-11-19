@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 快速给label添加长按手势，弹出菜单栏
 - (void)addLongpressShowWithTitles:(NSArray *)titles click:(nonnull XFMenuPopViewClickBlock)block;
 
+// 单击手势触发
+- (void)addSingleTapShowWithTitles:(NSArray *)titles click:(nonnull XFMenuPopViewClickBlock)block;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

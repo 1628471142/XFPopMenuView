@@ -34,13 +34,13 @@
     self.userInteractionEnabled = YES;
     self.popViewTitles = titles;
     self.popViewClickblock = block;
-    UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressEvent:)];
+    UILongPressGestureRecognizer * longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(gestureEvent:)];
     longPress.minimumPressDuration = 0.8;
     [self addGestureRecognizer:longPress];
     
 }
 
-- (void)longPressEvent:(UILongPressGestureRecognizer *)longPress{
+- (void)gestureEvent:(UIGestureRecognizer *)gesture{
     
     __weak UILabel *weakLab = self;
     [XFPopMenuView showWithTitles:self.popViewTitles forView:self click:^(NSInteger index, UIButton *btn) {
@@ -49,6 +49,15 @@
         }
     }];
     
+}
+
+- (void)addSingleTapShowWithTitles:(NSArray *)titles click:(nonnull XFMenuPopViewClickBlock)block{
+    self.userInteractionEnabled = YES;
+    self.popViewTitles = titles;
+    self.popViewClickblock = block;
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(gestureEvent:)];
+    tap.numberOfTouchesRequired = 1;
+    [self addGestureRecognizer:tap];
 }
 
 @end
